@@ -38,7 +38,7 @@ public class LinkedListTest {
         System.out.println(((Person)(iterator.next())).getPerson());
         }
     while(iterator.hasPrevious()) {
-        System.out.println(((Person)(iterator.hasPrevious())).getPerson());
+        System.out.println(((Person)(iterator.previous())).getPerson());
         }
     }
 }    
