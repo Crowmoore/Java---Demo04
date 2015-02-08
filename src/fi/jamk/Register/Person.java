@@ -10,7 +10,7 @@ package fi.jamk.Register;
  *
  * @author h3090
  */
-public class Person {
+public class Person implements Comparable{
  
     private String firstname;
     private String lastname;
@@ -22,6 +22,14 @@ public class Person {
         this.ssn = ssn;
     }
 
+    public int compareTo(Object nextPerson) {
+        String comparableLastname = ((Person)nextPerson).getLastname();
+        String comparableFirstname = ((Person)nextPerson).getLastname();
+        int lastnameCompare = lastname.compareTo(comparableLastname);
+        if (lastnameCompare == 0) return firstname.compareTo(comparableFirstname);
+        else return lastnameCompare;
+    }
+    
     public void setSsn(String ssn) {
         this.ssn = ssn;
     }
