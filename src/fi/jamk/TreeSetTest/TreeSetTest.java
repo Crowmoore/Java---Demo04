@@ -18,20 +18,13 @@ public class TreeSetTest {
     public static void main(String[] args) {
         
         TreeSet<Person> people = new TreeSet<>();
-        
-        Person person1 = new Person("Jesus", "Christ", "275023-213");
-        Person person2 = new Person("Roger", "Moore", "297630-3487");
-        Person person3 = new Person("Mickey", "Mouse", "769587-437");
-        Person person4 = new Person("Baal", "Argmar", "236458723-413");
-        Person person5 = new Person("Amanda", "Moore", "9742023-5684");
-        Person person6 = new Person("Mickey", "Mouse", "769587-437");
-        
-        people.add(person1);
-        people.add(person2);
-        people.add(person3);
-        people.add(person4);
-        people.add(person5);
-        people.add(person6);
+                
+        people.add(new Person("Jesus", "Christ", "275023-213"));
+        people.add(new Person("Roger", "Moore", "297630-3487"));
+        people.add(new Person("Mickey", "Mouse", "769587-437"));
+        people.add(new Person("Baal", "Argmar", "236458723-413"));
+        people.add(new Person("Amanda", "Moore", "9742023-5684"));
+        people.add(new Person("Mickey", "Mouse", "769587-437"));
         
         Iterator<Person> iterator = people.iterator();
         while(iterator.hasNext()) {
@@ -40,10 +33,10 @@ public class TreeSetTest {
         System.out.println();
         
         if(people.isEmpty()) {
-            System.out.print("Tree Set is empty, sorry.");
+            System.out.printf("Tree Set is empty, sorry.");
         }
         else {
-            System.out.print("Tree Set size: " + people.size() + " ");
+            System.out.printf("Tree Set size: %d ", people.size());
         }
         
     }

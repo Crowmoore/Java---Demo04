@@ -7,7 +7,6 @@ package fi.jamk.HashMapTest;
 
 import fi.jamk.Register.Person;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.TreeMap;
 
 /**

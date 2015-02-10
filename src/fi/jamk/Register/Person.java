@@ -24,7 +24,7 @@ public class Person implements Comparable{
 
     public int compareTo(Object nextPerson) {
         String comparableLastname = ((Person)nextPerson).getLastname();
-        String comparableFirstname = ((Person)nextPerson).getLastname();
+        String comparableFirstname = ((Person)nextPerson).getFirstname();
         int lastnameCompare = lastname.compareTo(comparableLastname);
         if (lastnameCompare == 0) return firstname.compareTo(comparableFirstname);
         else return lastnameCompare;
